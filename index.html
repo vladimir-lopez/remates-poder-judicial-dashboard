@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Robot Remates</title>
+  <style>
+    :root {
+      --bg: #0f172a; --panel: #111c33; --soft: #1c2944; --text: #e5edf7;
+      --muted: #9fb0c8; --ok: #22c55e; --warn: #f59e0b; --run: #38bdf8;
+    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+    main { max-width: 1180px; margin: 0 auto; padding: 32px; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    h2 { margin-top: 30px; font-size: 20px; }
+    .muted, .note, .label { color: var(--muted); }
+    .pill { display: inline-block; padding: 8px 12px; border-radius: 999px; background: var(--soft); margin-top: 8px; }
+    .pill.ok { color: var(--ok); } .pill.revisar { color: var(--warn); } .pill.corriendo { color: var(--run); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 22px 0; }
+    .card, section { background: var(--panel); border: 1px solid #263755; border-radius: 18px; padding: 18px; box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+    .value { font-size: 26px; font-weight: 750; margin: 8px 0 4px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px; border-bottom: 1px solid #263755; vertical-align: top; }
+    th { color: var(--muted); font-size: 13px; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #0b1222; padding: 14px; border-radius: 12px; color: #d7e3f5; max-height: 360px; overflow: auto; }
+    a { color: #93c5fd; }
+    .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Dashboard Robot Remates</h1>
+  <div class="muted">Generado: 2026-06-23T19:06:01-06:00 · Horario: America/Costa_Rica</div>
+  <div class="pill revisar">Estado general: Revisar</div>
+
+  <div class="grid">
+    <div class='card'><div class='label'>Última ejecución</div><div class='value'>2026-06-23T19:06:00-06:00</div><div class='note'>Estado: error</div></div>
+    <div class='card'><div class='label'>TXT guardados</div><div class='value'>643</div><div class='note'>Manifest: 643 · 232.4 MB</div></div>
+    <div class='card'><div class='label'>Último boletín</div><div class='value'>2026-06-23</div><div class='note'>2026-06-23_Boletin_Judicial_115_avi-1-0155-15620.txt</div></div>
+    <div class='card'><div class='label'>Remates únicos</div><div class='value'>15,030</div><div class='note'>Alertas: 1,051</div></div>
+    <div class='card'><div class='label'>launchd</div><div class='value'>running</div><div class='note'>PID: 7507 · runs: 2</div></div>
+    <div class='card'><div class='label'>Excel</div><div class='value'>Existe</div><div class='note'>2026-06-23T19:05:59-06:00</div></div>
+  </div>
+
+  <section>
+    <h2>Heredia de interés</h2>
+    <div class="muted">
+      Filtro: Heredia · vigentes · excluye Sarapiquí ·
+      base ≤ ₡35,000,000 ·
+      USD convertido a ₡520.00.
+    </div>
+    <div class="grid">
+      <div class='card'><div class='label'>Propiedades</div><div class='value'>48</div><div class='note'>Cumplen el filtro</div></div>
+      <div class='card'><div class='label'>Umbral CRC</div><div class='value'>₡35,000,000</div><div class='note'>Monto máximo</div></div>
+      <div class='card'><div class='label'>Umbral USD</div><div class='value'>$67,308</div><div class='note'>Equivalente usado</div></div>
+    </div>
+    <table>
+      <tr><th>Primer remate</th><th>Cantón</th><th>Distrito</th><th>Base original</th><th>Base eq ₡</th><th>Alerta</th><th>Expediente</th></tr>
+      <tr><td>2026-06-08</td><td>San Pablo</td><td>San Pablo</td><td>CRC 1,000,000</td><td>₡1,000,000</td><td></td><td>24-014725-1158-CJ</td></tr>
+<tr><td>2026-06-08</td><td>Belen</td><td>San Antonio</td><td>CRC 8,036,300</td><td>₡8,036,300</td><td></td><td>22-004253-1158-CJ</td></tr>
+<tr><td>2026-06-08</td><td>San Isidro</td><td>San Isidro</td><td>CRC 21,565,625</td><td>₡21,565,625</td><td></td><td>24-012260-1158-CJ</td></tr>
+<tr><td>2026-06-08</td><td>San Rafael</td><td>Concepcion</td><td>CRC 32,743,563</td><td>₡32,743,563</td><td></td><td>24-001820-1158-CJ</td></tr>
+<tr><td>2026-06-15</td><td>Santa Barbara</td><td>San Juan</td><td>CRC 6,842,900</td><td>₡6,842,900</td><td></td><td>23-008513-1158-CJ</td></tr>
+<tr><td>2026-06-15</td><td>Heredia</td><td>Ulloa</td><td>CRC 13,888,000</td><td>₡13,888,000</td><td></td><td>23-005339-1158-CJ</td></tr>
+<tr><td>2026-06-15</td><td>San Isidro</td><td>San Isidro</td><td>CRC 17,200,000</td><td>₡17,200,000</td><td></td><td>23-008163-1158-CJ</td></tr>
+<tr><td>2026-06-29</td><td>Santa Barbara</td><td>San Juan</td><td>CRC 10,700,000</td><td>₡10,700,000</td><td></td><td>23-006674-1158-CJ</td></tr>
+<tr><td>2026-06-29</td><td>San Rafael</td><td>Angeles</td><td>CRC 12,000,000</td><td>₡12,000,000</td><td></td><td>25-008854-1158-CJ</td></tr>
+<tr><td>2026-06-29</td><td>Heredia</td><td>Ulloa</td><td>CRC 27,539,747</td><td>₡27,539,747</td><td></td><td>25-005258-1158-CJ</td></tr>
+<tr><td>2026-07-06</td><td>San Rafael</td><td>Santiago</td><td>CRC 20,345,511</td><td>₡20,345,511</td><td></td><td>25-007406-1158-CJ</td></tr>
+<tr><td>2026-07-13</td><td>Santo Domingo</td><td>San Vicente</td><td>USD 30,000</td><td>₡15,600,000</td><td></td><td>25-004979-1158-CJ</td></tr>
+<tr><td>2026-07-13</td><td>Belen</td><td>San Antonio</td><td>CRC 21,533,035</td><td>₡21,533,035</td><td></td><td>25-012178-1158-CJ</td></tr>
+<tr><td>2026-07-13</td><td>Flores</td><td>Llorente</td><td>CRC 25,000,000</td><td>₡25,000,000</td><td></td><td>25-013254-1158-CJ</td></tr>
+<tr><td>2026-08-03</td><td>Heredia</td><td>San Francisco</td><td>CRC 10,996,161</td><td>₡10,996,161</td><td></td><td>24-010688-1158-CJ</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Advertencias</h2>
+    <ul><li>La última ejecución terminó con error.</li></ul>
+  </section>
+
+  <div class="cols">
+    <section>
+      <h2>Remates por estado</h2>
+      <table><tr><th>Estado</th><th>Cantidad</th></tr><tr><td>Vencido</td><td>13,988</td></tr>
+<tr><td>Vigente</td><td>912</td></tr>
+<tr><td>Sin fecha</td><td>130</td></tr></table>
+    </section>
+    <section>
+      <h2>Remates por provincia</h2>
+      <table><tr><th>Provincia</th><th>Cantidad</th></tr><tr><td>Alajuela</td><td>3,741</td></tr>
+<tr><td>San José</td><td>3,366</td></tr>
+<tr><td>Puntarenas</td><td>1,769</td></tr>
+<tr><td>Cartago</td><td>1,637</td></tr>
+<tr><td>Limón</td><td>1,599</td></tr>
+<tr><td>Guanacaste</td><td>1,374</td></tr>
+<tr><td>Heredia</td><td>1,203</td></tr>
+<tr><td>Sin provincia</td><td>341</td></tr></table>
+    </section>
+  </div>
+
+  <section>
+    <h2>Pasos de la última ejecución</h2>
+    <table><tr><th>Paso</th><th>Código</th><th>Inicio</th><th>Fin</th></tr><tr><td>descarga_txt</td><td>1</td><td>2026-06-23T19:01:38-06:00</td><td>2026-06-23T19:05:34-06:00</td></tr>
+<tr><td>procesar_remates</td><td>0</td><td>2026-06-23T19:05:34-06:00</td><td>2026-06-23T19:05:43-06:00</td></tr>
+<tr><td>generar_excel</td><td>0</td><td>2026-06-23T19:05:43-06:00</td><td>2026-06-23T19:06:00-06:00</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Archivos clave</h2>
+    <table>
+      <tr><th>Archivo</th><th>Existe</th><th>Tamaño</th><th>Modificado</th></tr>
+      <tr><td>Excel final</td><td>True</td><td>6.8 MB</td><td>2026-06-23T19:05:59-06:00</td></tr>
+      <tr><td>Manifest</td><td>True</td><td>369.4 KB</td><td>2026-06-23T12:01:11-06:00</td></tr>
+      <tr><td>Remates JSON</td><td>True</td><td>45.9 MB</td><td>2026-06-23T19:05:43-06:00</td></tr>
+      <tr><td>Log</td><td>True</td><td>74.7 KB</td><td>2026-06-23T19:06:00-06:00</td></tr>
+      <tr><td>Log errores</td><td>True</td><td>463.9 KB</td><td>2026-06-23T19:05:34-06:00</td></tr>
+    </table>
+  </section>
+
+
+</main>
+</body>
+</html>
